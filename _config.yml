@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: BlacKrow
-subtitle: I've asked all over the world, but there's no answer.
+title: BK's Dreg Heap
+subtitle: "I've asked all over the world, but there's no answer."
 description: "About me and my works."
 keywords: A, B, C
 author: BlacKrow
@@ -108,3 +108,14 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+# Hexo Word Counter 字數計數器
+## https://github.com/next-theme/hexo-word-counter
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: false
+  exclude_codeblock: false
+  wpm: 275
+  suffix: "mins."
