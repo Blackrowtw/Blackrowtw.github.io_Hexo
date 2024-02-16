@@ -1,0 +1,42 @@
+<section class="hero is-fullheight">
+  <!-- 最上方文字資訊 -->
+  <div class="hero-body is-overlay" id="hero-title">
+      <div class="container">
+          <div class="columns is-mobile is-vcentered is-marginless">
+              <div class="column is-marginless is-paddingless">
+                  <p class="title is-size-3 has-text-light has-text-right">
+                    {{site.data.ui-data.hero-Title}}
+                  </p>
+                  <p class="subtitle is-size-7 has-text-light is-marginless has-text-right">
+                    {{site.description}}
+                  </p>
+              </div>
+              <div class="column is-1 is-paddingless">     
+                  <figure class="image is-64x64" style="margin: 0px auto;">
+                      <img class="is-rounded" style="outline-style: auto; outline-color: white; box-shadow: 2px 2px 5px rgb(0, 0, 0);" src="{{site.author-image}}" alt="{{site.author-name}}">
+                  </figure>
+              </div>
+          </div>
+          <div class="column has-text-centered is-marginless is-paddingless">
+              <hr>
+              <p><a href="{{site.url}}{{site.baseurl}}/#about" class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Read More</a></p>
+              <br>
+              <p class="icon is-size-3 has-text-grey-light"><i class="fas fa-chevron-down"></i></p>
+          </div>
+      </div> 
+  </div>
+  <!-- 中間模糊玻璃層 -->
+  <div class="hero-body is-link" id="hero-glass">
+  </div>
+  <!-- 底下圖片輪換區 -->
+  <div class="wrapper">
+    <!--    {% for item in site.data.ui-data.hero-backgrond %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %} -->
+      <div class="hero-body" style="background-image:url({{site.data.ui-data.hero-backgrond-01}})"></div>
+      <div class="hero-body" style="background-image:url({{site.data.ui-data.hero-backgrond-02}})"></div>
+      <div class="hero-body" style="background-image:url({{site.data.ui-data.hero-backgrond-03}})"></div>
+      <div class="hero-body" style="background-image:url({{site.data.ui-data.hero-backgrond-04}})"></div>
+      <div class="hero-body" style="background-image:url({{site.data.ui-data.hero-backgrond-05}})"></div>
+  </div>
+</section>

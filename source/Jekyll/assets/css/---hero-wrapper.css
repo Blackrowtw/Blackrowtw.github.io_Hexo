@@ -1,0 +1,67 @@
+
+/* 首頁hreo輪播圖 */
+
+#hero-title{
+	padding: 1em;
+    width: 100vw;
+	height: 100vh;
+    position: absolute;
+    z-index: 3;
+}
+/* 調整文字層與最上面的距離 vh(1-100)% */
+#hero-title>div{
+	margin: auto auto 0px auto;
+}
+
+#hero-title>div>p{
+    margin-top: -5px;
+    z-index: 2;
+}
+#hero-glass{
+    width: 100vw;
+	height: 100vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+    background-color: black;
+	overflow: hidden;
+	position: relative;
+    left: 0px;
+}
+.wrapper>div {
+    filter: blur(0.15rem);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	animation: animate 25s infinite;
+	opacity: 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
+}
+.wrapper>div:nth-child(2) {
+	animation-delay: 5s;}
+.wrapper>div:nth-child(3) {
+	animation-delay: 10s;}
+.wrapper>div:nth-child(4) {
+	animation-delay: 15s;}
+.wrapper>div:nth-child(5) {
+	animation-delay: 20s;}
+
+@keyframes animate {
+	10% {
+		opacity: 1;}
+	20% {
+		opacity: 1;}
+	30% {
+		opacity: 0;}
+	40% {
+		transform: scale(1.05);}
+}

@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<!-- 自己ㄉCSS -->
+<link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/+page/test.css">
+<!-- Tiny-Swiper -->
+<script src="https://unpkg.com/tiny-swiper@latest"></script>
+
+
+<body>
+    {% include navbar.html %}
+
+        {{ content }}
+ 
+    <!--Footer begins here-->
+    {% include footer.html %}
+</body>
+
+</html>

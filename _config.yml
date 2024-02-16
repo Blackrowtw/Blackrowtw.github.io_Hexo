@@ -8,7 +8,11 @@ subtitle: I've asked all over the world, but there's no answer.
 description: "About me and my works."
 keywords: A, B, C
 author: BlacKrow
-language: zh-TW
+language:
+  - zh-TW
+  - zh-CN
+  - en
+  - ja
 timezone: "Asia/Taipei"
 
 # URL
