@@ -6,7 +6,13 @@
 title: BK's Dreg Heap
 subtitle: "I've asked all over the world, but there's no answer."
 description: "About me and my works."
-keywords: A, B, C
+keywords:
+  - "BlacKrow"
+  - "BlacKrowtw"
+  - "BlacKrowtwo"
+  - "spice and wolf"
+  - "狼與辛香料"
+  - "狼と香辛料"
 author: BlacKrow
 language:
   - zh-TW
@@ -18,8 +24,10 @@ timezone: "Asia/Taipei"
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://blackrowtw.github.io/
-permalink: :lang/:category/:year-:month-:day/:hash
+permalink: :lang/:year-:month-:day_:category_:hash
 permalink_defaults:
+  - lang: zh-TW
+  - category: Unfiled
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -33,9 +41,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+#  - "Jekyll/**/**/**"
 
 # Writing
-new_post_name: lang/:year-:month-:day:title.md # 新文章的檔案名稱
+new_post_name: lang/:year-:month-:day_:category_[:title].md # 新文章的檔案名稱
 default_layout: post #預設佈局
 titlecase: false # 把標題轉換為 title case
 auto_spacing: true #在西方文字與東方文字中加入空白
@@ -61,17 +70,20 @@ prismjs: #程式碼區塊的設定 PrismJS
   line_number: true
   tab_replace: ""
 
-# Home page setting
+# Home page setting 主頁設定
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
+# path：部落格索引頁的根路徑。 （預設=''）
+# per_page：每頁顯示的文章。 （0 = 禁用分頁）
+# order_by：文章排序。 （預設按日期降序排列）
 index_generator:
   path: ""
-  per_page: 10
+  per_page: 5
   order_by: -date
 
 # Category & Tag
-default_category: none
+default_category: Unfiled
 category_map:
 tag_map:
 
